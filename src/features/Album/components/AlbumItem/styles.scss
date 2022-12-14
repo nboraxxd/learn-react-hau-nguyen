@@ -1,0 +1,28 @@
+li {
+  list-style: none;
+}
+
+.album {
+  &-item {
+    width: 190px;
+  }
+
+  &-thumbnail {
+    &-image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  &-title {
+    text-decoration: none;
+    color: #999;
+    &-name {
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
